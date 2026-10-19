@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 760" width="520" height="760">
+  <rect width="520" height="760" fill="#f7f4ee"/>
+  <text x="28" y="36" font-family="Georgia, serif" font-size="20" fill="#1c1915">Clavier silicone</text>
+  <text x="28" y="56" font-family="system-ui, sans-serif" font-size="12" fill="#5c564c">F, été : sensation de froid. R, hiver : chaleur vers le haut.</text>
+
+  <g font-family="system-ui, sans-serif" text-anchor="middle">
+    <rect x="40" y="80" width="120" height="58" rx="10" fill="#fff" stroke="#1c1915"/>
+    <text x="100" y="104" font-size="13" font-weight="600" fill="#1c1915">ON / OFF</text>
+    <text x="100" y="122" font-size="11" fill="#57534e">lumière</text>
+
+    <rect x="300" y="80" width="120" height="58" rx="10" fill="#fff" stroke="#1c1915"/>
+    <text x="360" y="114" font-size="13" font-weight="600" fill="#1c1915">ALL OFF</text>
+
+    <rect x="24" y="148" width="152" height="58" rx="10" fill="#fff" stroke="#1c1915"/>
+    <text x="100" y="170" font-size="15" font-weight="600" fill="#1c1915">F · été</text>
+    <text x="100" y="188" font-size="11" fill="#57534e">sensation de froid</text>
+
+    <rect x="284" y="148" width="152" height="58" rx="10" fill="#fff" stroke="#1c1915"/>
+    <text x="360" y="170" font-size="15" font-weight="600" fill="#1c1915">R · hiver</text>
+    <text x="360" y="188" font-size="11" fill="#57534e">chaleur vers le haut</text>
+
+    <circle cx="230" cy="300" r="108" fill="none" stroke="#1c1915" stroke-width="1.5"/>
+    <circle cx="230" cy="300" r="42" fill="#fff" stroke="#1c1915"/>
+    <text x="230" y="294" font-size="11" font-weight="600" fill="#1c1915">PAIR CODE</text>
+    <text x="230" y="310" font-size="11" fill="#57534e">FAN OFF</text>
+
+    <text x="230" y="214" font-size="20" font-weight="600" fill="#1c1915">3</text>
+    <text x="140" y="306" font-size="20" font-weight="600" fill="#1c1915">2</text>
+    <text x="320" y="306" font-size="20" font-weight="600" fill="#1c1915">4</text>
+    <text x="230" y="392" font-size="20" font-weight="600" fill="#1c1915">5</text>
+
+    <rect x="40" y="430" width="70" height="48" rx="10" fill="#fff" stroke="#1c1915"/>
+    <text x="75" y="460" font-size="20" font-weight="600" fill="#1c1915">1</text>
+    <rect x="350" y="430" width="70" height="48" rx="10" fill="#fff" stroke="#1c1915"/>
+    <text x="385" y="460" font-size="20" font-weight="600" fill="#1c1915">6</text>
+
+    <rect x="40" y="500" width="90" height="120" rx="16" fill="#fff" stroke="#1c1915"/>
+    <text x="85" y="548" font-size="16" fill="#1c1915">+ soleil</text>
+    <text x="85" y="590" font-size="16" fill="#1c1915">− soleil</text>
+    <text x="85" y="668" font-size="11" fill="#57534e">luminosité</text>
+
+    <rect x="180" y="500" width="100" height="120" rx="16" fill="#fff" stroke="#1c1915"/>
+    <text x="230" y="548" font-size="16" fill="#1c1915">+ K</text>
+    <text x="230" y="590" font-size="16" fill="#1c1915">− K</text>
+    <text x="230" y="668" font-size="11" fill="#57534e">température</text>
+
+    <rect x="330" y="500" width="90" height="120" rx="16" fill="#fff" stroke="#1c1915"/>
+    <text x="375" y="568" font-size="16" fill="#1c1915">lune</text>
+    <text x="375" y="668" font-size="11" fill="#57534e">nuit</text>
+
+    <rect x="40" y="690" width="100" height="46" rx="10" fill="#fff" stroke="#1c1915"/>
+    <text x="90" y="718" font-size="13" fill="#1c1915">vagues</text>
+
+    <rect x="180" y="690" width="100" height="46" rx="10" fill="#fff" stroke="#1c1915"/>
+    <text x="230" y="718" font-size="16" font-weight="600" fill="#1c1915">2H</text>
+
+    <rect x="320" y="690" width="100" height="46" rx="10" fill="#fff" stroke="#1c1915"/>
+    <text x="370" y="718" font-size="16" font-weight="600" fill="#1c1915">4H</text>
+  </g>
+</svg>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 720" width="980" height="720">
+  <rect width="980" height="720" fill="#f7f4ee"/>
+  <text x="40" y="42" font-family="Georgia, serif" font-size="22" fill="#1c1915">Schéma fonctionnel — télécommande ZMCF008</text>
+  <text x="40" y="64" font-family="system-ui, sans-serif" font-size="13" fill="#5c564c">Relevé photo du 19 oct. 2026. Les liaisons en pointillés ne sont pas vérifiées au multimètre.</text>
+
+  <!-- battery -->
+  <g font-family="system-ui, sans-serif" fill="#1c1915">
+    <text x="70" y="130" font-size="14" font-weight="600">BT1</text>
+    <text x="70" y="148" font-size="12" fill="#5c564c">2 × AAA</text>
+    <line x1="150" y1="118" x2="190" y2="118" stroke="#1c1915" stroke-width="3"/>
+    <line x1="158" y1="132" x2="182" y2="132" stroke="#1c1915" stroke-width="1.5"/>
+    <text x="196" y="114" font-size="12">+ 3,0 V</text>
+    <text x="196" y="140" font-size="12">−</text>
+    <text x="70" y="172" font-size="12" fill="#5c564c">Pas de régulateur visible.</text>
+    <text x="70" y="188" font-size="12" fill="#5c564c">Le SoC est alimenté directement.</text>
+  </g>
+
+  <!-- rails -->
+  <line x1="170" y1="118" x2="170" y2="230" stroke="#b45309" stroke-width="2"/>
+  <line x1="170" y1="132" x2="170" y2="560" stroke="#3f6212" stroke-width="2"/>
+  <text x="178" y="224" font-family="system-ui, sans-serif" font-size="12" fill="#b45309">VCC</text>
+  <text x="178" y="548" font-family="system-ui, sans-serif" font-size="12" fill="#3f6212">GND</text>
+
+  <!-- decoupling -->
+  <g stroke="#1c1915" fill="none" stroke-width="1.6">
+    <line x1="170" y1="250" x2="230" y2="250"/>
+    <line x1="230" y1="238" x2="230" y2="262"/>
+    <line x1="238" y1="238" x2="238" y2="262"/>
+    <line x1="238" y1="250" x2="300" y2="250"/>
+    <line x1="300" y1="250" x2="300" y2="560"/>
+  </g>
+  <text x="214" y="232" font-family="system-ui, sans-serif" font-size="12" fill="#1c1915">C?</text>
+  <text x="248" y="278" font-family="system-ui, sans-serif" font-size="11" fill="#5c564c">découplage, valeur inconnue</text>
+  <text x="248" y="294" font-family="system-ui, sans-serif" font-size="11" fill="#5c564c">candidat : CMS bleu non marqué</text>
+
+  <!-- SoC -->
+  <rect x="360" y="210" width="280" height="250" rx="6" fill="#111827" stroke="#111827"/>
+  <text x="400" y="248" font-family="system-ui, sans-serif" font-size="16" fill="#f8fafc" font-weight="600">U1 — SoC BLE</text>
+  <text x="400" y="272" font-family="system-ui, sans-serif" font-size="13" fill="#e7e5e4">boîtier SOP, 2 × 8 pattes</text>
+  <text x="400" y="292" font-family="system-ui, sans-serif" font-size="13" fill="#e7e5e4">marquage illisible</text>
+  <text x="400" y="320" font-family="system-ui, sans-serif" font-size="13" fill="#fbbf24">horloge 16,000 MHz</text>
+  <text x="400" y="340" font-family="system-ui, sans-serif" font-size="13" fill="#86efac">radio 2,4 GHz interne</text>
+  <text x="400" y="368" font-family="system-ui, sans-serif" font-size="12" fill="#d6d3d1">pastille pin 1 : extrémité</text>
+  <text x="400" y="386" font-family="system-ui, sans-serif" font-size="12" fill="#d6d3d1">du boîtier opposée à l'antenne</text>
+  <text x="400" y="420" font-family="system-ui, sans-serif" font-size="12" fill="#a8a29e">GPIO matrice clavier</text>
+
+  <line x1="300" y1="250" x2="360" y2="250" stroke="#b45309" stroke-width="2"/>
+  <line x1="430" y1="460" x2="430" y2="560" stroke="#3f6212" stroke-width="2"/>
+  <line x1="300" y1="560" x2="430" y2="560" stroke="#3f6212" stroke-width="2"/>
+
+  <!-- crystal -->
+  <g stroke="#1c1915" fill="none" stroke-width="1.6">
+    <line x1="640" y1="300" x2="700" y2="300"/>
+    <rect x="700" y="278" width="36" height="44" fill="#f5e6c8" stroke="#1c1915"/>
+    <line x1="736" y1="300" x2="790" y2="300"/>
+    <line x1="790" y1="300" x2="790" y2="430"/>
+    <line x1="640" y1="430" x2="790" y2="430"/>
+    <!-- load caps -->
+    <line x1="718" y1="322" x2="718" y2="348"/>
+    <line x1="710" y1="348" x2="726" y2="348"/>
+    <line x1="710" y1="356" x2="726" y2="356"/>
+    <line x1="718" y1="356" x2="718" y2="430"/>
+    <line x1="760" y1="300" x2="760" y2="348"/>
+    <line x1="752" y1="348" x2="768" y2="348"/>
+    <line x1="752" y1="356" x2="768" y2="356"/>
+    <line x1="760" y1="356" x2="760" y2="430"/>
+  </g>
+  <text x="692" y="268" font-family="system-ui, sans-serif" font-size="13" fill="#1c1915">Y1 16,000 MHz</text>
+  <text x="700" y="470" font-family="system-ui, sans-serif" font-size="12" fill="#5c564c">C? et C? charges quartz</text>
+  <text x="700" y="486" font-family="system-ui, sans-serif" font-size="12" fill="#5c564c">valeurs non lisibles</text>
+  <line x1="640" y1="300" x2="640" y2="250" stroke="#1c1915" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <line x1="640" y1="430" x2="640" y2="400" stroke="#1c1915" stroke-width="1.6" stroke-dasharray="4 3"/>
+
+  <!-- antenna -->
+  <g stroke="#1c1915" fill="none" stroke-width="1.6">
+    <line x1="500" y1="210" x2="500" y2="150" stroke-dasharray="4 3"/>
+    <line x1="500" y1="150" x2="620" y2="150"/>
+    <path d="M620 150 h18 v-16 h14 v16 h14 v-16 h14 v16 h14 v-16 h14 v16 h18" stroke="#c2410c" stroke-width="2.4"/>
+  </g>
+  <text x="620" y="128" font-family="system-ui, sans-serif" font-size="13" fill="#c2410c">ANT1 — méandre cuivre 2,4 GHz</text>
+  <text x="400" y="198" font-family="system-ui, sans-serif" font-size="11" fill="#5c564c">sortie RF, accord non relevé</text>
+
+  <!-- resistor note -->
+  <rect x="40" y="330" width="280" height="110" rx="6" fill="#fff" stroke="#d6d3d1"/>
+  <text x="56" y="354" font-family="system-ui, sans-serif" font-size="14" fill="#1c1915" font-weight="600">R1 — marqué 222</text>
+  <text x="56" y="376" font-family="system-ui, sans-serif" font-size="12" fill="#44403c">Code 22 × 10² = 2,2 kΩ</text>
+  <text x="56" y="394" font-family="system-ui, sans-serif" font-size="12" fill="#44403c">Boîtier noir, près du quartz</text>
+  <text x="56" y="412" font-family="system-ui, sans-serif" font-size="12" fill="#44403c">et de l'antenne. Rôle ouvert :</text>
+  <text x="56" y="428" font-family="system-ui, sans-serif" font-size="12" fill="#44403c">pull-up ou polarisation, pas l'antenne.</text>
+
+  <!-- keypad -->
+  <rect x="360" y="590" width="560" height="90" rx="6" fill="#fff" stroke="#1c1915"/>
+  <text x="378" y="616" font-family="system-ui, sans-serif" font-size="14" fill="#1c1915" font-weight="600">Matrice clavier — dômes métal</text>
+  <text x="378" y="638" font-family="system-ui, sans-serif" font-size="12" fill="#44403c">Environ 18 contacts. Les traits noirs sont des ponts carbone de la matrice.</text>
+  <text x="378" y="656" font-family="system-ui, sans-serif" font-size="12" fill="#44403c">Lignes et colonnes aboutissent aux GPIO de U1. Nets non numérotés : le verso manque.</text>
+  <line x1="500" y1="460" x2="500" y2="590" stroke="#1c1915" stroke-width="1.6" stroke-dasharray="4 3"/>
+
+  <text x="40" y="700" font-family="system-ui, sans-serif" font-size="12" fill="#78716c">Le 16,000 MHz est l'horloge du SoC. La porteuse Bluetooth est synthétisée dans la puce, autour de 2,402–2,480 GHz.</text>
+</svg>

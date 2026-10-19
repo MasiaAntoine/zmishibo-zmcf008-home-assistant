@@ -1,0 +1,5 @@
+.DS_Store
+
+# Secrets Wi-Fi ESPHome et produits de compilation
+esphome/secrets.yaml
+esphome/.esphome/

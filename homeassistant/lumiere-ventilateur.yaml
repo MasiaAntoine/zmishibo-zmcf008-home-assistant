@@ -1,0 +1,25 @@
+# Lumière corrigée du ventilateur ZMISHIBO.
+#
+# À fusionner dans configuration.yaml de Home Assistant, sous l’unique clé
+# template: . Un second bloc template: écrase le premier.
+#
+# L’entité d’origine reste utilisée pour la luminosité et la température
+# de couleur. Ce modèle n’échange que le marche et l’arrêt.
+#
+# Après rechargement : light.lumiere_ventilateur
+# Elle se trouve dans Paramètres → Appareils et services → Entrées.
+# Le pont Maison ne la prend que si on la coche dans HomeKit Bridge.
+
+template:
+  - light:
+      - name: Lumière ventilateur
+        unique_id: lumiere_ventilateur_corrigee
+        state: "{{ is_state('light.ventilateur_salon_lampe_principale', 'off') }}"
+        turn_on:
+          - action: light.turn_off
+            target:
+              entity_id: light.ventilateur_salon_lampe_principale
+        turn_off:
+          - action: light.turn_on
+            target:
+              entity_id: light.ventilateur_salon_lampe_principale
